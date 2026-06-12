@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Navneet Raghav</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a class="site-title" href="index.html">Navneet Raghav</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="notes.html">Notes</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="sidebar">
+      <img class="profile-img" src="assets/img/profile.svg" alt="Navneet Raghav" />
+      <div class="name-badge">Navneet Raghav</div><br />
+      <div class="role-badge">B.Tech CSE Cybersecurity @ NFSU</div>
+      <p>Research focus:<br />ML Privacy and AI Safety</p>
+      <ul class="side-links">
+        <li>📍 Lucknow, India</li>
+        <li>✉️ <a href="mailto:navneet.rag@gmail.com">Email</a></li>
+        <li>🔗 <a href="https://linkedin.com/in/navneetraghav">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/navneet-raghav">GitHub</a></li>
+        <li>📄 <a href="files/Navneet_Raghav_CV.pdf">CV</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <h1>Projects</h1>
+
+      <div class="card">
+        <h2>TRACE-MultiStat: Internal Drift Audit for Small-Set Unlearning</h2>
+        <p class="meta">Python, PyTorch, Hugging Face Transformers</p>
+        <p>
+          Built a PyTorch based audit pipeline to study whether small forget sets still leave internal traces after approximate unlearning.
+          I extract token-level hidden-state drift before and after unlearning, and use simple multi-statistic features for forget-vs-retain and forget-vs-unseen auditing.
+        </p>
+        <p>
+          I compared TRACE-MultiStat with output-only and compact TC-style baselines using DistilBERT and DistilRoBERTa on AG News, QNLI, and SST-2.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Deepfake Detection using CNN Ensemble and Grad-CAM</h2>
+        <p class="meta">Python, PyTorch, OpenCV, Streamlit</p>
+        <p>
+          Developed a deepfake detection system using XceptionNet and EfficientNet-B0 with ensemble learning.
+          I also added Grad-CAM visualizations to understand which parts of the face the model is focusing on while predicting.
+        </p>
+        <p>
+          I handled class imbalance using weighted sampling and loss functions, and added augmentations like JPEG compression, noise, and blur to make the system more useful on real-world images.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Energy-Efficient Intrusion Detection</h2>
+        <p class="meta">NIT Warangal | Smart Energy Systems | XGBoost, IoT Sensing</p>
+        <p>
+          Working on an energy-efficient intrusion detection system for industrial use-cases.
+          I developed an XGBoost based ML pipeline on a custom dataset to detect human heat signatures using a thermal array sensor.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 Navneet Raghav. Built with a simple static GitHub Pages template.
+  </footer>
+</body>
+</html>
