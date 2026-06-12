@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navneet Raghav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <img src="profile.jpg" alt="Navneet Raghav" class="profile-photo" onerror="this.onerror=null; this.src='assets/profile-placeholder.svg';">
+
+        <h1>Navneet Raghav</h1>
+        <p class="role">B.Tech CSE Student</p>
+        <p class="focus">ML Privacy, AI Safety, and Trustworthy ML</p>
+
+        <div class="info-block">
+          <p class="label">🎓</p>
+          <div>
+            <a href="#" class="text-link">National Forensic Sciences University</a>
+            <div class="muted">School of Cyber Security and Digital Forensics, Lucknow</div>
+          </div>
+        </div>
+
+        <div class="info-line">📍 Lucknow, India</div>
+
+        <div class="link-list">
+          <a href="Navneet_Raghav_CV.pdf" target="_blank">📄 CV</a>
+          <a href="mailto:navneet.rag@gmail.com">✉️ Email</a>
+          <a href="https://www.linkedin.com/in/navneetraghav" target="_blank">🔗 LinkedIn</a>
+          <a href="https://github.com/navneet-raghav" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a B.Tech Computer Science and Engineering student with a focus on Cybersecurity at National Forensic Sciences University, Lucknow.
+          My current interests are in ML privacy, AI safety, membership inference attacks, machine unlearning, and representation analysis.
+        </p>
+        <p>
+          Right now, I am mainly working on research around privacy auditing for approximate machine unlearning, especially in cases where the forget set is small and output-only methods may miss part of the signal.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Machine Learning Privacy</li>
+          <li>Membership Inference Attacks</li>
+          <li>Machine Unlearning</li>
+          <li>AI Safety and Trustworthy ML</li>
+          <li>Representation Analysis in Transformer Models</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Current Research</h2>
+        <h3>TRACE-UMIA / TRACE-MultiStat</h3>
+        <p>
+          My main research direction right now is TRACE-UMIA. It is not an unlearning method. It is an audit method.
+          The idea is to check whether approximate unlearning still leaves internal traces of forget samples inside transformer text classifiers.
+        </p>
+        <p>
+          I compare the model before and after unlearning, extract token-level hidden representation drift,
+          and use simple multi-statistic features with logistic regression to audit whether forget samples move differently from retain and same-source unseen samples.
+        </p>
+        <p>
+          The safest claim from my current experiments is that internal representation based audits can detect forget-specific traces that output-only audits may miss or under-detect,
+          especially for small targeted forget sets.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <h3>Research Intern — Indian Institute of Technology (IIT BHU), Varanasi</h3>
+          <div class="entry-meta">May 2026 – Present</div>
+          <p>
+            Working under <a href="https://iitbhu.ac.in/dept/cse/people/hkasyapcse" target="_blank">Prof. Harsh Kasyap</a> on ML privacy and machine unlearning.
+            My work is mainly around using membership-inference style audits and internal representation drift to study approximate unlearning.
+          </p>
+        </div>
+
+        <div class="entry">
+          <h3>Summer Intern — National Institute of Technology, Warangal</h3>
+          <div class="entry-meta">June 2026 – Present</div>
+          <p>
+            Working on smart energy systems with a focus on AI/ML, IoT-based sensing, and intelligent monitoring.
+            I am also working on an energy-efficient intrusion detection setup using thermal sensing and ML.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selected Projects</h2>
+
+        <div class="entry">
+          <h3>TRACE-MultiStat: Internal Drift Audit for Small-Set Unlearning</h3>
+          <p>
+            Built a PyTorch-based audit pipeline to study whether small forget sets still leave internal traces after approximate unlearning.
+            I compared internal token-drift features with output-only and compact TC-style baselines on AG News, QNLI, and SST-2.
+          </p>
+        </div>
+
+        <div class="entry">
+          <h3>Deepfake Detection using CNN Ensemble and Grad-CAM</h3>
+          <p>
+            Developed a deepfake detection system using XceptionNet and EfficientNet-B0 with ensemble learning,
+            along with Grad-CAM visualizations to understand which face regions the model focuses on.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul>
+          <li><strong>June 2026:</strong> Started as a Summer Intern at NIT Warangal, working on smart energy systems and AI/ML-based sensing.</li>
+          <li><strong>May 2026:</strong> Started as a Research Intern at IIT BHU under Prof. Harsh Kasyap.</li>
+          <li><strong>2026:</strong> Working on TRACE-UMIA, an internal representation based audit method for approximate machine unlearning.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Open to Collaboration</h2>
+        <p>
+          I am looking for research internship or remote collaboration opportunities in ML privacy, trustworthy ML, AI safety,
+          machine unlearning, and membership inference attacks.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

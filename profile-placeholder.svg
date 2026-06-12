@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#eceff4"/>
+  <circle cx="300" cy="220" r="90" fill="#c5ccd8"/>
+  <path d="M170 470c18-78 83-125 130-125s112 47 130 125" fill="#c5ccd8"/>
+  <text x="300" y="545" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#7a8494">Add your photo as profile.jpg</text>
+</svg>
