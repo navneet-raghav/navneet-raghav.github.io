@@ -29,7 +29,7 @@
 <div class="link-list">
   <a href="Navneet_Raghav_CV.pdf" target="_blank">📄 CV</a>
 
-  <a href="mailto:navneet.rag@gmail.com">✉️ navneet.rag@gmail.com</a>
+  <a href="mailto:navneet.rag@gmail.com">✉ navneet.rag@gmail.com</a>
 
   <a href="https://www.linkedin.com/in/navneetraghav" target="_blank" class="icon-link">
     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -61,11 +61,11 @@
       <section>
         <h2>About</h2>
         <p>
-          I am a B.Tech Computer Science and Engineering student with a focus on Cybersecurity at National Forensic Sciences University, Lucknow.
-          My current interests are in ML privacy, AI safety, membership inference attacks, machine unlearning, and representation analysis.
+          I am a B.Tech Computer Science and Engineering student at National Forensic Sciences University, UPSIFS Campus Lucknow.
+          My current interests are in ML privacy, AI safety, membership inference attacks, machine unlearning, and representational analysis.
         </p>
         <p>
-          Right now, I am mainly working on research around privacy auditing for approximate machine unlearning, especially in cases where the forget set is small and output-only methods may miss part of the signal.
+          Right now, I am mainly working on research around privacy auditing for approximate machine unlearning, especially in cases where the forget set is small and output-only methods may miss part of the membership signal.
         </p>
       </section>
 
@@ -82,19 +82,13 @@
 
       <section>
         <h2>Current Research</h2>
-        <h3>TRACE-UMIA / TRACE-MultiStat</h3>
+        <h3>TRACE-UMIA</h3>
         <p>
-          My main research direction right now is TRACE-UMIA. It is not an unlearning method. It is an audit method.
-          The idea is to check whether approximate unlearning still leaves internal traces of forget samples inside transformer text classifiers.
+          My main research direction right now is TRACE-UMIA. It is an machine unlearning audit method.
+          The idea is to check whether approximate unlearning leaves internal traces of forget samples inside transformer text classifiers, especially when the 
+          forget sample is small and output score based auditing methods miss the signal.
         </p>
-        <p>
-          I compare the model before and after unlearning, extract token-level hidden representation drift,
-          and use simple multi-statistic features with logistic regression to audit whether forget samples move differently from retain and same-source unseen samples.
-        </p>
-        <p>
-          The safest claim from my current experiments is that internal representation based audits can detect forget-specific traces that output-only audits may miss or under-detect,
-          especially for small targeted forget sets.
-        </p>
+        
       </section>
 
       <section>
@@ -114,13 +108,13 @@
           <div class="entry-meta">June 2026 – Present</div>
           <p>
             Working on smart energy systems with a focus on AI/ML, IoT-based sensing, and intelligent monitoring.
-            I am also working on an energy-efficient intrusion detection setup using thermal sensing and ML.
+            I am developing an energy-efficient intrusion detection system for industrial use-cases , the project is funded by Hitachi Energy India Ltd.
           </p>
         </div>
       </section>
 
       <section>
-        <h2>Selected Projects</h2>
+        <h2>Projects</h2>
 
         <div class="entry">
           <h3>TRACE-MultiStat: Internal Drift Audit for Small-Set Unlearning</h3>
@@ -151,7 +145,7 @@
       <section>
         <h2>Open to Collaboration</h2>
         <p>
-          I am looking for research internship or remote collaboration opportunities in ML privacy, trustworthy ML, AI safety,
+          I am looking for research internship and other remote collaboration opportunities in trustworthy ML, AI safety,
           machine unlearning, and membership inference attacks.
         </p>
       </section>
